@@ -1,0 +1,15 @@
+{% include big_title.html title=include.group_name %}
+<div class="portfolio-group-container">
+    {% for post in site.pages %}
+        {% if post.pagetype == "portfoliopage" and post.portfoliotype == include.portfolio_type %}
+        <div class="portfolio-nav-container">
+            <a href="{{post.url}}">
+                <div class="portfolio-nav-overimage"></div>
+                <img class="portfolio-nav-image" src="{{post.thumburl}}">
+                <div class="portfolio-nav-text-container"><div class="portfolio-nav-text">{{post.title}}</div></div>
+                
+            </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>

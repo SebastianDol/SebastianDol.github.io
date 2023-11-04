@@ -1,0 +1,12 @@
+---
+layout: "root"
+---
+{{ content }}
+{% for video in page.videos %}
+{% include described_video.html url=video.url desc=video.desc %}
+<br><br>
+{% endfor %}
+{% for image in page.images %}
+{% include described_image.html url=image.url desc=image.desc %}
+<br><br>
+{% endfor %}

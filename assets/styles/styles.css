@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #BBB;
+    font-size: 18;
+}
+
+h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    background-color: rgb(49, 49, 49);
+    background-image: linear-gradient(rgb(45, 45, 45) 10%, rgb(30, 30, 30));
+    background-attachment: fixed;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body{
+    height:100%;
+    width:100%;
+}
+
+.content-body{
+    margin:auto;
+    max-width: 1000px;
+    width:100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.frontnavigation-nav{
+    display:flex;
+    width: max-content;
+    height: max-content;
+    margin:auto;
+}
+
+.frontnavigation-text-holder{
+    text-align: center;
+    margin:auto;
+    width: 80px;
+    height: 30px;
+}
+
+.frontnavigation-text-element{
+    margin:auto;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18;
+    text-shadow: 1px 1px #000;
+}
+
+.frontnavigation-text-element:hover {
+    font-size: 20;
+    transition: font 0.3s ease
+  }
+
+  .frontnavigation-text-element:not(hover) {
+    font-size: 18;
+    transition: font 0.3s ease
+  }
+
+  .signed-video {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+.signed-image-container {
+    width: max-content;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+.signed-image-desc {
+    width:max-content;
+    max-width: 100%;
+    margin: auto;
+}
+
+.image-container {
+    padding: 10px;
+    margin:auto;
+    max-width: 100%;
+    max-height: 500px;
+}
+  
+.image-container img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.header-nav{
+    display:flex;
+    width: max-content;
+    height: 80px;
+    margin:auto;
+}
+
+.title-first{
+    font-size: 60;
+    align-self: center;
+    color: #FFF;
+}
+
+.title-second{
+    font-size: 40;
+    align-self: center;
+    color: #cacaca;
+}
+
+.title-container{
+    display:flex;
+    width: auto;
+    height: max-content;
+    margin:5px;
+    padding:5px;
+    border-style: solid;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.title-text{
+    font-size: 25;
+    color: #FFF;
+}
+
+.portfolio-group-container
+{
+    width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio-nav-container{
+    position: relative;
+    width: calc(33.333% - 10px);
+    margin: 5px;
+    aspect-ratio: 1/1;
+}
+
+.portfolio-nav-container:hover {
+    transition: transform 0.2s ease;
+    transform: perspective(50em) rotateX(5deg);
+}
+
+.portfolio-nav-container:not(hover) {
+    transition: transform 0.2s ease;
+    transform: none;
+}
+
+.portfolio-nav-overimage{
+    background-color: #aaaaaa18;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-nav-overimage:hover{
+    transition: background-color 0.2s ease;
+    background-color: #aaaaaa00;
+}
+
+.portfolio-nav-overimage:not(hover){
+    transition: background-color 0.2s ease;
+}
+
+.portfolio-nav-image{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-nav-text-container{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width:max-content;
+    height:max-content;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.portfolio-nav-text{
+    font-size: 22;
+    color: #FFF;
+}

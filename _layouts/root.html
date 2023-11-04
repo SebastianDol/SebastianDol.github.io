@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="\assets\styles\styles.css">
+        <meta charset="UTF-8">
+        <title>{{site.title}}~{{page.title}}</title>
+    </head>
+    <body>
+        <div class="header-nav">
+            <div class="title-first">Daz</div>
+            <div class="title-second">codes</div>
+        </div>
+        <div class="frontnavigation-nav">
+            {% for post in site.pages %}
+                {% if post.pagetype == "frontpage" %}
+                <div class="frontnavigation-text-holder">
+                    <a class="frontnavigation-text-element" style="{% if page.url == post.url %}color:white;{% endif %}" href="{{post.url}}">{{post.title}}</a>
+                </div>
+                        
+                {% endif %}
+            {% endfor %}
+        </div>
+        <br>
+        <div class="content-body">
+            {% include big_title.html title=page.title %}
+            {{ content }}
+        </div>
+        <br>
+        <div class="content-body">
+            Site generated with Jekyll<br>
+            Front-end by myself
+        </div>
+        <br>
+    </body>
+
+</html>
