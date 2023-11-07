@@ -17,6 +17,10 @@ h1 {
     font-size: 24px;
   }
 
+.bright-text {
+    color: #DDD;
+  }
+
 html, body {
     margin: 0;
     padding: 0;
